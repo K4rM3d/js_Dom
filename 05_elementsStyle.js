@@ -1,4 +1,3 @@
-let btn = Array.from(document.getElementsByTagName("button"));
-console.log(btn);
-
-btn.map((element) => (element.style.backgroundColor = "red"));
+Array.from(document.getElementsByTagName("button")).map(
+  (element) => (element.style.backgroundColor = "red")
+);
