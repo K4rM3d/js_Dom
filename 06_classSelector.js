@@ -1,8 +1,6 @@
 function classSelector() {
-  let xWing = document.getElementsByClassName("x-wing");
-  return xWing;
+  return document.getElementsByClassName("x-wing")[2].innerHTML;
 }
 
-classSelector();
-
+// console.log(classSelector());
 module.exports = classSelector;
