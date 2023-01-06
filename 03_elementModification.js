@@ -1,6 +1,6 @@
 function elementModification() {
   return (document.getElementsByTagName("button")[0].textContent =
-    "hello word");
+    "hello world");
 }
 elementModification();
 
