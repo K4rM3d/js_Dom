@@ -1,7 +1,7 @@
 function parentAccess(par) {
-  return par.parentNode;
+  return par.parentElement.nodeName;
 }
 
 console.log(parentAccess(document.querySelector("p")));
 
-module.eports = parentAccess;
+// module.eports = parentAccess;
