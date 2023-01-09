@@ -4,4 +4,4 @@ function parentAccess(par) {
 
 // console.log(parentAccess(document.querySelector("p")));
 
-module.eports = parentAccess;
+module.exports = parentAccess;
