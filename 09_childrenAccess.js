@@ -1,5 +1,5 @@
 function childrenAcccess() {
-  return document.querySelector("#menu").firstElementChild;
+  return document.querySelector("#menu").firstElementChild.innerHTML;
 }
 
 module.exports = childrenAcccess;
