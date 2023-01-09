@@ -1,7 +1,7 @@
 function insertHelloWorld() {
   let element = document.createElement("p");
   element.innerHTML = "Hello Word";
-  document.body.appendChild(element);
+  return document.body.appendChild(element);
 }
-insertHelloWorld();
+// insertHelloWorld();
 module.exports = insertHelloWorld;
