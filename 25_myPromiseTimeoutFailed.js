@@ -1,9 +1,9 @@
 const sleepThrow = (millisecondes, condition) => {
   return new Promise((resolve, reject) => {
     if (condition === true) {
-      setTimeout(resolve, millisecondes);
+      setTimeout(() => resolve("Success"), millisecondes);
     } else {
-      setTimeout(reject, millisecondes);
+      setTimeout(() => reject("Failed"), millisecondes);
     }
   });
 };
