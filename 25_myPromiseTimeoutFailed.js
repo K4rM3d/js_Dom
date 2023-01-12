@@ -1,12 +1,14 @@
 const sleepThrow = (millisecondes, condition) => {
   return new Promise((resolve, reject) => {
     if (condition === true) {
-      setTimeout(() => resolve("Success"), millisecondes);
+      setTimeout(resolve, millisecondes);
     } else {
-      setTimeout(() => reject("Failed"), millisecondes);
+      setTimeout(reject, millisecondes);
     }
   });
 };
+
+exports.module = sleepThrow;
 
 sleepThrow(2000, true)
   .then(() => console.log("ok"))
